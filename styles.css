@@ -138,6 +138,27 @@ header {
     text-align: left;
 }
 
+.page-hero-title {
+    font-size: 2.4em;
+    margin-bottom: 12px;
+}
+
+.page-hero-subtitle {
+    max-width: 900px;
+    margin: 0 auto;
+    font-size: 1.1em;
+    line-height: 1.6;
+}
+
+.page-hero-subtitle a {
+    color: #fff;
+    text-decoration: underline;
+}
+
+.page-hero-subtitle a:hover {
+    color: #ddd;
+}
+
 /* Main Content */
 .main-content {
     background-color: #fff;
@@ -196,6 +217,92 @@ header {
     line-height: 1.6;
 }
 
+/* Chapter Detail Pages */
+.chapter-section {
+    margin: 44px 0;
+}
+
+.chapter-section h3 {
+    font-size: 1.5em;
+    margin-bottom: 16px;
+    color: #222;
+}
+
+.media-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 24px;
+}
+
+.media-grid-3 {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.media-item {
+    margin: 0;
+}
+
+.media-item-wide {
+    grid-column: 1 / -1;
+    max-width: 820px;
+    margin: 0 auto;
+}
+
+.video-wrapper {
+    position: relative;
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    background-color: #111;
+}
+
+.video-wrapper iframe {
+    width: 100%;
+    height: 100%;
+    border: 0;
+}
+
+.media-item figcaption {
+    margin-top: 12px;
+    font-size: 0.95em;
+    color: #555;
+    line-height: 1.55;
+}
+
+.section-note {
+    margin: 24px 0 14px;
+    font-size: 1.05em;
+    color: #444;
+}
+
+.chapter-image {
+    margin: 26px 0 30px;
+    text-align: center;
+}
+
+.chapter-image img {
+    width: 100%;
+    max-width: 640px;
+    height: auto;
+}
+
+.chapter-list {
+    margin-left: 24px;
+    color: #333;
+}
+
+.chapter-list li {
+    margin-bottom: 14px;
+    line-height: 1.7;
+}
+
+.references-section .paragraph {
+    font-size: 1em;
+    line-height: 1.7;
+    color: #555;
+    margin-bottom: 18px;
+    overflow-wrap: anywhere;
+}
+
 /* Footer */
 footer {
     background-color: #333;
@@ -242,8 +349,24 @@ footer a:hover {
         padding: 15px;
     }
 
+    .page-hero-title {
+        font-size: 2em;
+    }
+
+    .page-hero-subtitle {
+        font-size: 1em;
+    }
+
     .intro-section p {
         font-size: 1em;
+    }
+
+    .media-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .media-grid-3 {
+        grid-template-columns: 1fr;
     }
 }
 
@@ -255,6 +378,10 @@ footer a:hover {
     .hero-quote {
         font-size: 1.2em;
         border-left: 3px solid #fff;
+    }
+
+    .page-hero-title {
+        font-size: 1.6em;
     }
 
     .chapter-item h3 {
