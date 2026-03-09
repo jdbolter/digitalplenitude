@@ -187,6 +187,13 @@ header {
     color: #ddd;
 }
 
+/* Shared Interior Hero */
+body:not(.home-page) .hero {
+    background-image: linear-gradient(rgba(44, 62, 80, 0.5), rgba(44, 62, 80, 0.5)), url("assets/plenitud-graphic.jpg");
+    background-size: cover;
+    background-position: center 34%;
+}
+
 /* Main Content */
 .main-content {
     background-color: #fff;
